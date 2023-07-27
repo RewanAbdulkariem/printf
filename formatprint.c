@@ -26,7 +26,10 @@ int PrintString(va_list list)
 	int i ;
 
 	s = va_arg(list,char *);
-	
+	if (s == NULL)
+	{
+		s = "(null)";
+	}
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 	
