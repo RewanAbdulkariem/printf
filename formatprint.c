@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * PrintChar - Conversion function to print a single character ('%c' format specifier).
+ * PrintChar - Conversion function to print a single character
+ * ('%c' format specifier).
  *
- * This function expects an argument of type `int` from the variable argument list (`va_list`).
- * The argument represents the character to be printed. The function calls `_putchar`
- * to print the character to the standard output .
+ * This function expects an argument of type `int`
+ * The argument represents the character to be printed.
  *
  * @list: argument list containing the character to be printed.
  */
@@ -13,13 +13,22 @@
 int PrintChar(va_list list)
 {
 	int i;
-	
+
 	i = va_arg(list,int);
 	_putchar(i);
-	
+
 	return (1);
 }
-
+/**
+ * PrintString - Conversion function to print a string
+ * ('%s' format specifier).
+ *
+ * This function expects an argument of type `char *`
+ * The argument represents the string to be printed.
+ * If the input string is NULL, it prints "(null)" instead.
+ *
+ * @list: argument list containing the string to be printed.
+ */
 int PrintString(va_list list)
 {
 	char *s;
@@ -32,9 +41,17 @@ int PrintString(va_list list)
 	}
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
-	
+
 	return (i);
 }
+/**
+ * PrintPercentage - Conversion function to print the '%' character
+ * ('%%' format specifier)
+ *
+ * This function does not require any arguments
+ *
+ * @list: unused argument list.
+ */
 int PrintPrecentage(__attribute__((unused))va_list list)
 {
 	_putchar('%');
