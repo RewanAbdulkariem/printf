@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	
 	va_start(list, format);
 	
-	NumPrinted = formatParser(format, FunList,list);
+	NumPrinted = formatParser(format, FunList, list);
 	
 	va_end(list);
 	return (NumPrinted);

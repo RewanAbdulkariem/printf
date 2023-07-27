@@ -7,20 +7,20 @@
 
 typedef struct convert
 {
-	char op;
-	void (*fun)(va_list);
+	char *op;
+	int (*fun)(va_list);
 } ConvertSt;
 
 /*a function that produces output according to a format.*/
 int _printf(const char *format, ...);
 /*print functions moduls*/
-int PrintChar(va_list);
-int PrintString(va_list);
-int PrintPrecentage(va_list);
+int PrintChar(va_list list);
+int PrintString(va_list list);
+int PrintPrecentage(va_list list);
 int _putchar(char c);
  /** Parses the input formatted string and processes format specifiers,
   * invoking the corresponding conversion functions to print the    	  
   * formatted output */ 
-int formatParser(const char *, ConvertSt, va_list);
+int formatParser(const char *, ConvertSt *, va_list);
 
 #endif

@@ -27,13 +27,16 @@ int PrintString(va_list list)
 
 	s = va_arg(list,char *);
 	
-	for (i = 0; str[i] != '\0'; i++)
-		_putchar(str[i]);
+	for (i = 0; s[i] != '\0'; i++)
+		_putchar(s[i]);
 	
 	return (i);
 }
-int PrintPrecentage(va_list)
+int PrintPrecentage(va_list list)
 {
-	_putchar('%');
+	char c;
+	
+	c = va_arg(list,int);
+	_putchar(c);
 	return (1);
 }

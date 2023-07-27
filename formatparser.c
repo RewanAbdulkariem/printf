@@ -8,7 +8,7 @@
  * @list: list of arguments passed to the program
  * Return: number of characters printed
  */
-int formatParser(const char *format, ConvertSt FunList,va_list list)
+int formatParser(const char *format, ConvertSt *FunList,va_list list)
 {
 	int i = 0, NumOfPrinted = 0;
 	
@@ -27,12 +27,12 @@ int formatParser(const char *format, ConvertSt FunList,va_list list)
 				}
 				j++;
 			}
-			if (f_list[j].sym == NULL && format[i + 1] != ' ')
+			if (FunList[j].op == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{
-					_putchar(format[i])
-					_putchar(format[i + 1])
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
 					NumOfPrinted = NumOfPrinted + 2;
 				}
 				else
@@ -45,6 +45,7 @@ int formatParser(const char *format, ConvertSt FunList,va_list list)
 			_putchar(format[i]);
 			NumOfPrinted++;
 		}
+		i++;
 	}
 	return (NumOfPrinted);
 }
