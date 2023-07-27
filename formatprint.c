@@ -47,7 +47,7 @@ int PrintString(va_list list)
 	return (i);
 }
 /**
- * PrintPercentage - Conversion function to print the '%' character
+ * PrintPrecentage - Conversion function to print the '%' character
  * ('%%' format specifier)
  *
  * This function does not require any arguments
@@ -55,7 +55,7 @@ int PrintString(va_list list)
  * @list: unused argument list.
  * Return: 1 as the number of printed characters.
  */
-int PrintPercentage(__attribute__((unused)) va_list list)
+int PrintPrecentage(__attribute__((unused)) va_list list)
 {
 	_putchar('%');
 	return (1);
