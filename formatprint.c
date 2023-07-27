@@ -60,3 +60,35 @@ int PrintPrecentage(__attribute__((unused)) va_list list)
 	_putchar('%');
 	return (1);
 }
+int integer(int d)
+{
+	int len = 0;
+
+	if (d < 0)
+	{
+		_putchar('-');
+		d = -d;
+		len++;
+	}
+	if (d < 10)
+	{
+		_putchar('0' + d);
+		len++;
+	}
+	else
+	{
+		integer(d / 10);
+		_putchar('0' + (d % 10));
+		len++;
+	}
+	return (len);
+}
+int PrintInt(va_list list)
+{
+	int d;
+	
+	d = va_arg(list, int);
+	return (integer(d));
+}
+	
+

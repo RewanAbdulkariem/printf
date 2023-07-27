@@ -13,6 +13,8 @@ int _printf(const char *format, ...)
 		{"c", PrintChar},
 		{"s", PrintString},
 		{"%", PrintPrecentage},
+		{"d", PrintInt},
+		{"i", PrintInt},
 		{NULL, NULL}
 		};
 	va_list list;
