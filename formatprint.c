@@ -35,11 +35,8 @@ int PrintString(va_list list)
 	
 	return (i);
 }
-int PrintPrecentage(va_list list)
+int PrintPrecentage(__attribute__((unused))va_list list)
 {
-	char c;
-	
-	c = va_arg(list,int);
-	_putchar(c);
+	_putchar('%');
 	return (1);
 }

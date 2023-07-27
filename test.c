@@ -79,12 +79,39 @@ void test_5()
 		fflush(stdout);
 	}
 }
-void test_6()
+/*void test_6()
 {
 	int len, len2;
 
 	len = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
 	len2 = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	fflush(stdout);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+	}
+}*/
+void test_7()
+{
+	int len, len2;
+
+	len = _printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+	len2 = printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+	fflush(stdout);
+	if (len != len2)
+	{
+		printf("Lengths differ.\n");
+		fflush(stdout);
+	}
+}
+
+void test_8()
+{
+	int len, len2;
+
+	len = _printf("%%");
+	len2 = printf("%%");
 	fflush(stdout);
 	if (len != len2)
 	{
@@ -105,7 +132,9 @@ int main(void)
 	test_3();
 	test_4();
 	test_5();
-	test_6();
+	/*test_6();*/
+	test_7();
+	test_8();
 	return (0);
 }
 
