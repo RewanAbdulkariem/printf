@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int NumPrinted ;
+	int NumPrinted;
 
 	ConvertSt FunList[] = {
 		{"c", PrintChar},

@@ -8,7 +8,7 @@
  * The argument represents the character to be printed.
  *
  * @list: argument list containing the character to be printed.
- * Return: 1 as number of printedchar.
+ * 
  */
 
 int PrintChar(va_list list)
@@ -29,7 +29,6 @@ int PrintChar(va_list list)
  * If the input string is NULL, it prints "(null)" instead.
  *
  * @list: argument list containing the string to be printed.
- * Return: number of printedchar.
  */
 int PrintString(va_list list)
 {
@@ -53,9 +52,8 @@ int PrintString(va_list list)
  * This function does not require any arguments
  *
  * @list: unused argument list.
- * Return: 1 as the number of printed characters.
  */
-int PrintPercentage(__attribute__((unused)) va_list list)
+int PrintPrecentage(__attribute__((unused))va_list list)
 {
 	_putchar('%');
 	return (1);

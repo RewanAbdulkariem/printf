@@ -8,7 +8,7 @@
  * @list: list of arguments passed to the program
  * Return: number of characters printed
  */
-int formatParser(const char *format, ConvertSt *FunList,va_list list)
+int formatParser(const char *format, ConvertSt *FunList, va_list list)
 {
 	int i = 0, NumOfPrinted = 0;
 
