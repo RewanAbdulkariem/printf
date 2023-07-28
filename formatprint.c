@@ -44,7 +44,7 @@ int PrintString(va_list list)
 	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((0 < s[i] && s[i] < 32) || s[i] >= 127)
+		if ((s[i] > 0 && s[i] < 32) || s[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');

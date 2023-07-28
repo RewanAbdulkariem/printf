@@ -23,7 +23,7 @@ int PrintBinary(va_list list)
 	a = malloc(len * sizeof(char));
 	if (a == NULL)
 		return (-1);
-		
+
 	if (num == 0)
 	{
 		_putchar('0');
@@ -61,7 +61,7 @@ int PrintOctal(va_list list)
 	a = malloc(len * sizeof(char));
 	if (a == NULL)
 		return (-1);
-		
+
 	if (num == 0)
 	{
 		_putchar('0');
@@ -96,7 +96,7 @@ int PrintLowHex(va_list list)
 	a = malloc(len * sizeof(char));
 	if (a == NULL)
 		return (-1);
-		
+
 	if (num == 0)
 	{
 		_putchar('0');
@@ -134,7 +134,7 @@ int PrintUpperHex(va_list list)
 	a = malloc(len * sizeof(char));
 	if (a == NULL)
 		return (-1);
-		
+
 	if (num == 0)
 	{
 		_putchar('0');
