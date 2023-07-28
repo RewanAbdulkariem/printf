@@ -96,10 +96,10 @@ int PrintOctal(va_list list)
  */
 int PrintLowHex(va_list list)
 {
-	unsigned int num;
+	unsigned long int num;
 
 
-	num = va_arg(list, unsigned int);
+	num = va_arg(list, unsigned long int);
 
 	return (printHex(num, 0));
 }
@@ -113,9 +113,9 @@ int PrintLowHex(va_list list)
  */
 int PrintUpperHex(va_list list)
 {
-	unsigned int num;
+	unsigned long int num;
 
-	num = va_arg(list, unsigned int);
+	num = va_arg(list, unsigned long int);
 
 	return (printHex(num, 1));
 }

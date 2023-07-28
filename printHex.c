@@ -8,11 +8,11 @@
  *
  * Return: The number of hexadecimal digits printed.
  */
-int printHex(unsigned int num, int IsUpper)
+int printHex(unsigned long int num, int IsUpper)
 {
 	int i, len;
 	char *a;
-	unsigned int temp;
+	unsigned long int temp;
 
 	temp = num;
 	len = 0;

@@ -22,6 +22,7 @@ int _printf(const char *format, ...)
 		{"x", PrintLowHex},
 		{"X", PrintUpperHex},
 		{"S", PrintCustomString},
+		{"p", PrintMemoryAddress},
 		{NULL, NULL}
 		};
 	va_list list;

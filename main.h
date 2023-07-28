@@ -33,11 +33,12 @@ int PrintOctal(va_list list);
 int PrintLowHex(va_list list);
 int PrintUpperHex(va_list list);
 int PrintCustomString(va_list list);
+int PrintMemoryAddress(va_list list);
 
 /* helper function */
 int _putchar(char c);
 int formatParser(const char *, ConvertSt *, va_list);
 int integer(int d, int shouldClear);
 int UnsignedInteger(unsigned int num, int shouldClear);
-int printHex(unsigned int num, int IsUpper);
+int printHex(unsigned long int num, int IsUpper);
 #endif
