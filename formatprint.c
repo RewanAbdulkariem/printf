@@ -62,7 +62,7 @@ int PrintPrecentage(__attribute__((unused)) va_list list)
 }
 int integer(int d)
 {
-	int len = 0;
+	static int len = 0;
 
 	if (d < 0)
 	{
