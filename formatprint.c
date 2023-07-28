@@ -78,3 +78,10 @@ int PrintInt(va_list list)
 	d = va_arg(list, int);
 	return (integer(d, 1));
 }
+int PrintUnsigned(va_list list)
+{
+	unsigned int d;
+
+	d = va_arg(list, unsigned int);
+	return (UnsignedInteger(d, 1));
+}

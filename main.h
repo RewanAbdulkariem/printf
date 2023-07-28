@@ -24,9 +24,15 @@ int PrintChar(va_list list);
 int PrintString(va_list list);
 int PrintPrecentage(va_list list);
 int PrintInt(va_list list);
+int PrintUnsigned(va_list list);
 int PrintBinary(va_list list);
+int PrintOctal(va_list list);
+int PrintLowHex(va_list list);
+int PrintUpperHex(va_list list);
+
 /* helper function */
 int _putchar(char c);
 int formatParser(const char *, ConvertSt *, va_list);
 int integer(int d, int shouldClear);
+int UnsignedInteger(unsigned int num, int shouldClear);
 #endif

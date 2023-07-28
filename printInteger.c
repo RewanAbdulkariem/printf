@@ -42,3 +42,25 @@ int integer(int d, int shouldClear)
 	}
 	return (len);
 }
+int UnsignedInteger(unsigned int num, int shouldClear)
+{
+	static int len;
+
+	if (shouldClear)
+	{
+		len = 0;
+	}
+
+	if (num < 10)
+	{
+		_putchar('0' + num);
+		len++;
+	}
+	else
+	{
+		UnsignedInteger(num / 10, 0);
+		_putchar('0' + (num % 10));
+		len++;
+	}
+	return (len);
+}
