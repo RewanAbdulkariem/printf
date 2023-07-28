@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * integer - Recursive utility function to print an integer in decimal format.
  *
