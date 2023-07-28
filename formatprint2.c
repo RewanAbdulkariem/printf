@@ -13,6 +13,11 @@ int PrintBinary(va_list list)
 	unsigned int num;
 
 	num = va_arg(list, unsigned int);
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	for (i = 0; num > 0; i++)
 	{
 		if (num % 2)
