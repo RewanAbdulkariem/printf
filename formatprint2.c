@@ -9,10 +9,21 @@
 int PrintBinary(va_list list)
 {
 	int i, len;
-	char a[32];
-	unsigned int num;
+	char *a;
+	unsigned int num, temp;
 
 	num = va_arg(list, unsigned int);
+	temp = num;
+	len = 0;
+	while (temp)
+	{
+		temp >>= 1;
+		len++;
+	}
+	a = malloc(len * sizeof(char));
+	if (a == NULL)
+		return (-1);
+		
 	if (num == 0)
 	{
 		_putchar('0');
@@ -26,7 +37,6 @@ int PrintBinary(va_list list)
 			a[i] = '0';
 		num /= 2;
 	}
-	len = i;
 	for (i -= 1; i >= 0; i--)
 	{
 		putchar(a[i]);

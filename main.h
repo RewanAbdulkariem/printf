@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-
+#include <stdlib.h>
 /**
  * struct convert - Struct to store format conversion function pointers.
  *
