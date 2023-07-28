@@ -1,5 +1,13 @@
 #include "main.h"
-
+/**
+ * printHex - Prints the hexadecimal representation of an unsigned integer.
+ *
+ * @num: The unsigned integer to print in hexadecimal format.
+ * @IsUpper: A flag to determine whether to use
+ * uppercase letters (A-F) or lowercase letters (a-f).
+ *
+ * Return: The number of hexadecimal digits printed.
+ */
 int printHex(unsigned int num, int IsUpper)
 {
 	int i, len;
