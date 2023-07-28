@@ -32,6 +32,7 @@ int PrintBinary(va_list list);
 int PrintOctal(va_list list);
 int PrintLowHex(va_list list);
 int PrintUpperHex(va_list list);
+int PrintCustomString(va_list list);
 
 /* helper function */
 int _putchar(char c);

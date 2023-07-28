@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 		{"o", PrintOctal},
 		{"x", PrintLowHex},
 		{"X", PrintUpperHex},
+		{"S", PrintCustomString},
 		{NULL, NULL}
 		};
 	va_list list;
