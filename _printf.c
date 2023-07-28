@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 		{"%", PrintPrecentage},
 		{"d", PrintInt},
 		{"i", PrintInt},
+		{"b", PrintBinary},
 		{NULL, NULL}
 		};
 	va_list list;
