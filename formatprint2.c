@@ -44,6 +44,13 @@ int PrintBinary(va_list list)
 	free(a);
 	return (len);
 }
+/**
+ * PrintOctal - Prints the octal representation of an unsigned integer.
+ *
+ * @list: A variable argument list containing the unsigned integer to print.
+ *
+ * Return: The number of octal digits printed.
+ */
 int PrintOctal(va_list list)
 {
 	int i, len;
@@ -79,6 +86,14 @@ int PrintOctal(va_list list)
 	free(a);
 	return (len);
 }
+/**
+ * PrintLowHex - Prints the lowercase hexadecimal representation
+ * of an unsigned integer.
+ *
+ * @list: A variable argument list containing the unsigned integer to print.
+ *
+ * Return: The number of hexadecimal digits printed.
+ */
 int PrintLowHex(va_list list)
 {
 	int i, len;
@@ -117,6 +132,14 @@ int PrintLowHex(va_list list)
 	free(a);
 	return (len);
 }
+/**
+ * PrintUpperHex - Prints the uppercase hexadecimal representation
+ * of an unsigned integer.
+ *
+ * @list: A variable argument list containing the unsigned integer to print.
+ *
+ * Return: The number of hexadecimal digits printed.
+ */
 int PrintUpperHex(va_list list)
 {
 	int i, len;

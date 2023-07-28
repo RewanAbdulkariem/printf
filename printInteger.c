@@ -42,6 +42,14 @@ int integer(int d, int shouldClear)
 	}
 	return (len);
 }
+/**
+ * UnsignedInteger - Prints the decimal representation of an unsigned integer.
+ *
+ * @num: The unsigned integer to print.
+ * @shouldClear: A flag indicating whether to clear the static length counter.
+ *
+ * Return: The total number of characters printed for this call.
+ */
 int UnsignedInteger(unsigned int num, int shouldClear)
 {
 	static int len;

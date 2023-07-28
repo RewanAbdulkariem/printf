@@ -104,6 +104,13 @@ int PrintInt(va_list list)
 	d = va_arg(list, int);
 	return (integer(d, 1));
 }
+/**
+ * PrintUnsigned - Prints the decimal representation of an unsigned integer.
+ *
+ * @list: A variable argument list containing the unsigned integer to print.
+ *
+ * Return: The number of decimal digits printed.
+ */
 int PrintUnsigned(va_list list)
 {
 	unsigned int d;
