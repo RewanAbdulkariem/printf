@@ -63,22 +63,26 @@ int PrintPrecentage(__attribute__((unused)) va_list list)
 int integer(int d)
 {
 	static int len = 0;
-
+	unsigned int num;
+	
 	if (d < 0)
 	{
 		_putchar('-');
-		d = -d;
+		
+		num = -d;
 		len++;
 	}
-	if (d < 10)
+	else 
+		num = d;
+	if (num < 10)
 	{
-		_putchar('0' + d);
+		_putchar('0' + num);
 		len++;
 	}
 	else
 	{
-		integer(d / 10);
-		_putchar('0' + (d % 10));
+		integer(num / 10);
+		_putchar('0' + (num % 10));
 		len++;
 	}
 	return (len);
