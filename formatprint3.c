@@ -13,7 +13,7 @@ int PrintMemoryAddress(va_list list)
 	int len;
 
 	ptr = va_arg(list, void *);
-	
+
 	if (ptr == NULL)
 	{
 		len = _printf("(nil)");
