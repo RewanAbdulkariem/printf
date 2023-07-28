@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 		};
 	va_list list;
+
 	if (format == NULL)
 		return (-1);
 
