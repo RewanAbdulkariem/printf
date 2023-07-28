@@ -39,4 +39,5 @@ int _putchar(char c);
 int formatParser(const char *, ConvertSt *, va_list);
 int integer(int d, int shouldClear);
 int UnsignedInteger(unsigned int num, int shouldClear);
+int printHex(unsigned int num, int IsUpper);
 #endif
