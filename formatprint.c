@@ -60,11 +60,15 @@ int PrintPrecentage(__attribute__((unused)) va_list list)
 	_putchar('%');
 	return (1);
 }
-int integer(int d)
+int integer(int d, int shouldClear)
 {
 	static int len = 0;
 	unsigned int num;
 	
+	if (shouldClear)
+	{
+       	len = 0;
+        }
 	if (d < 0)
 	{
 		_putchar('-');
@@ -81,7 +85,7 @@ int integer(int d)
 	}
 	else
 	{
-		integer(num / 10);
+		integer(num / 10, 0);
 		_putchar('0' + (num % 10));
 		len++;
 	}
@@ -92,7 +96,7 @@ int PrintInt(va_list list)
 	int d;
 	
 	d = va_arg(list, int);
-	return (integer(d));
+	return (integer(d, 1));
 }
 	
 

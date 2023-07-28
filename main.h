@@ -24,5 +24,5 @@ int _putchar(char c);
   * invoking the corresponding conversion functions to print the    	  
   * formatted output */ 
 int formatParser(const char *, ConvertSt *, va_list);
-int integer(int d);
+int integer(int d, int shouldClear);
 #endif
