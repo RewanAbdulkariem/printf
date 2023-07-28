@@ -9,6 +9,7 @@ int _printf(const char *format, ...)
 {
 	int NumPrinted;
 
+
 	ConvertSt FunList[] = {
 		{"c", PrintChar},
 		{"s", PrintString},

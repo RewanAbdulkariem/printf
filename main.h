@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+
+#define BUFFER_SIZE 1024
+
 /**
  * struct convert - Struct to store format conversion function pointers.
  *
