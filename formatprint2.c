@@ -39,7 +39,8 @@ int PrintBinary(va_list list)
 	}
 	for (i -= 1; i >= 0; i--)
 	{
-		putchar(a[i]);
+		_putchar(a[i]);
 	}
+	free(a);
 	return (len);
 }
