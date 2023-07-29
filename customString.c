@@ -73,3 +73,32 @@ int PrintReversed(va_list list)
 		_putchar(s[i]);
 	return (len);
 }
+int PrintROT13(va_list list) 
+{
+	char *s;
+	int i, len, index;
+
+	s = va_arg(list, char *);
+
+	if (s == NULL)
+	{
+		s = "(null)";
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		index = (int)s[i];
+		if ((index >= 65 && index <= 77) || (index >= 97 && index <= 109))
+		{
+			_putchar(index + 13);
+		}
+		else if ((index >= 78 && index <= 90) || (index >= 110 && index <= 122))
+		{
+			_putchar(index - 13);
+		}
+		else
+			_putchar(index);
+		
+	}
+	len = i;
+	return (len);
+}

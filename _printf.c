@@ -24,6 +24,7 @@ int _printf(const char *format, ...)
 		{"S", PrintCustomString},
 		{"p", PrintMemoryAddress},
 		{"r", PrintReversed},
+		{"R", PrintROT13},
 		{NULL, NULL}
 		};
 	va_list list;
