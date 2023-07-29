@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"X", PrintUpperHex},
 		{"S", PrintCustomString},
 		{"p", PrintMemoryAddress},
+		{"r", PrintReversed},
 		{NULL, NULL}
 		};
 	va_list list;

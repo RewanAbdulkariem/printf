@@ -34,7 +34,7 @@ int PrintLowHex(va_list list);
 int PrintUpperHex(va_list list);
 int PrintCustomString(va_list list);
 int PrintMemoryAddress(va_list list);
-
+int PrintReversed(va_list list);
 /* helper function */
 int _putchar(char c);
 int formatParser(const char *, ConvertSt *, va_list);

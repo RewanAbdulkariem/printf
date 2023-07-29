@@ -48,3 +48,28 @@ int PrintCustomString(va_list list)
 	}
 	return (len);
 }
+/**
+ * PrintReversed - Pprints the reversed string
+ *
+ * @list: A variable argument list containing the string to print.
+ *
+ * Return: The number of characters printed.
+ */
+int PrintReversed(va_list list)
+{
+	char *s;
+	int i, len;
+
+	s = va_arg(list, char *);
+
+	if (s == NULL)
+	{
+		s = "(null)";
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	;
+	len = i;
+	for (i = len - 1; s[i] != '\0'; i--)
+		_putchar(s[i]);
+	return (len);
+}
